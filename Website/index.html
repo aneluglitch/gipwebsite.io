@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css" integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dist/css/lightbox.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/logo.svg">
+    <title>Music City</title>
+</head>
+
+<body>
+    <header>
+        <div id="navbar">
+            <span id="menu-btn" onclick="ToggleMenu()">
+                <i class="fas fa-2x fa-bars"></i>
+            </span>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#projecten">Projecten</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#social">Social</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="jumbo" class="container">
+            <img src="img/logo.svg" alt="">
+        </section>
+        <img src="img/animatie.gif" alt="">
+        <section id="about-us" class=" section">
+            <div class="grid-col-2">
+                <div data-aos="fade-right">
+                    <h2>About Us</h2>
+                    <div>
+                        <p>
+                            Heb je thuis instrumenten thuis liggen die stof verzamelen?
+                            Breng ze binnen bij ons. Hier bij Music City kan je je niet gebruikte
+                            instrumenten binnenbrengen en deze geven wij dan
+                            door aan kinderen in het stad die dit zich financieel niet kunnen
+                            permitteren
+                        </p>
+                    </div>
+                </div>
+                <div data-aos="fade-up-left">
+                    <img src="img/Double.JPG" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="gallery" class="text-center container">
+            <h2>Gallery</h2>
+            <div class="row">
+                <div class="col-lg-4" data-aos="fade-right">
+                    <div class="img-thumbnail">
+                        <a class="example-image-link" href="img/SipUkelele.JPG" data-lightbox="example-set">
+                            <img src="img/SipUkelele.JPG" class="img-fluid example-image" alt="foto1">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up">
+                    <div class="img-thumbnail">
+                        <a class="example-image-link" href="img/Guitar.JPG" data-lightbox="example-set">
+                            <img src="img/Guitar.JPG" class="img-fluid example-image" alt="foto2">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-left">
+                    <div class="img-thumbnail">
+                        <a class="example-image-link" href="img/Microphone-2.JPG" data-lightbox="example-set">
+                            <img src="img/Microphone-2.JPG" class="img-fluid example-image" alt="foto3">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4" data-aos="fade-right">
+                    <div class="img-thumbnail">
+                        <a class="example-image-link" href="img/Speaker.JPG" data-lightbox="example-set">
+                            <img src="img/Speaker.JPG" class="img-fluid example-image" alt="foto4">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up">
+                    <div class="img-thumbnail">
+                        <a class="example-image-link" href="img/Microphone2-2.JPG" data-lightbox="example-set">
+                            <img src="img/Microphone2-2.JPG" class="img-fluid example-image" alt="foto5">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-left">
+                    <div class="img-thumbnail">
+                        <a class="example-image-link" href="img/SipUkelele2.JPG" data-lightbox="example-set">
+                            <img src="img/SipUkelele2.JPG" class="img-fluid example-image" alt="foto6">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4" data-aos="fade-right">
+                    <div class="img-thumbnail">
+                        <a class="example-image-link" href="img/Ukelele.JPG" data-lightbox="example-set">
+                            <img src="img/Ukelele.JPG" class="img-fluid example-image" alt="foto7">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up">
+                    <div class="img-thumbnail">
+                        <a class="example-image-link" href="img/Uk.JPG" data-lightbox="example-set">
+                            <img src="img/Uk.JPG" class="img-fluid example-image" alt="foto8">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-left">
+                    <div class="img-thumbnail">
+                        <a class="example-image-link" href="img/Sound.JPG" data-lightbox="example-set">
+                            <img src="img/Sound.JPG" class="img-fluid example-image" alt="foto9">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4" data-aos="fade-right">
+                    <div class="img-thumbnail">
+                        <a class="example-image-link" href="img/Double.JPG" data-lightbox="example-set">
+                            <img src="img/Double.JPG" class="img-fluid example-image" alt="10">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up">
+                    <div class="img-thumbnail">
+                        <a class="example-image-link" href="img/Keyboard closeup.JPG" data-lightbox="example-set">
+                            <img src="img/Keyboard closeup.JPG" class="img-fluid example-image" alt="11">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-left">
+                    <div class="img-thumbnail">
+                        <a class="example-image-link" href="img/SipGuitar-2.JPG" data-lightbox="example-set">
+                            <img src="img/SipGuitar-2.JPG" class="img-fluid example-image" alt="12">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4" data-aos="fade-right">
+                    <div class="img-thumbnail">
+                        <a class="example-image-link" href="img/SipGuitar2.JPG" data-lightbox="example-set">
+                            <img src="img/SipGuitar2.JPG" class="img-fluid example-image" alt="13">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up">
+                    <div class="img-thumbnail">
+                        <a class="example-image-link" href="img/Ukelele2.JPG" data-lightbox="example-set">
+                            <img src="img/Ukelele2.JPG" class="img-fluid example-image" alt="14">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-left">
+                    <div class="img-thumbnail">
+                        <a class="example-image-link" href="img/PCKeyboard1.JPG" data-lightbox="example-set">
+                            <img src="img/PCKeyboard1.JPG" class="img-fluid example-image" alt="15">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+        <section id="projecten" class="text-center container">
+            <h2>Projecten</h2>
+            <div class="grid-col-2">
+                <div data-aos="fade-right">
+                    <iframe src="https://www.youtube.com/embed/f4s4OwcfMmg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div data-aos="fade-left">
+                    <iframe src="https://www.youtube.com/embed/e9-bgUKHxiQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="container">
+            <h2>Contact</h2>
+            <div id="contact-info" class="row">
+                <div class="col-lg-6" data-aos="fade-up-right">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="3"></textarea>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div id="maps" class="col-lg-6" data-aos="fade-down-left">
+                    <p>Vul het formulier in en houd je e-mail in de gaten,
+                        we antwoorden zo snel mogelijk of bezoek onze
+                        winkel en stel je vraag!</p>
+                    <div id='map' style='width: 100%; height: 300px;'></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="social" class="text-center container">
+            <h2>Social</h2>
+            <p>
+                Volg ons zeker op sociale media voor updates en foto's
+            </p>
+            <div class="socials">
+                <a href="https://www.instagram.com/aneluglitch/" target="_blank"><img src="img/insta-logo.png" alt="insta" data-aos="fade-right"></a>
+                <a href="https://twitter.com/aneluglitcHh" target="_blank"><img src="img/twitter.svg" alt="twitter" data-aos="fade-up"></a>
+                <a href="https://www.facebook.com/anel.ugli.tch/" target="_blank"><img src="img/fb-logo.png" alt="facebook" data-aos="fade-left"></a>
+            </div>
+        </section>
+    </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
